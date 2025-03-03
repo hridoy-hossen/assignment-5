@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo test</title>
+</head>
+<body>
+    <h3 id="number">25</h3>
+    <button id="decrice">Decrice</button>
+
+    <script>
+        document.getElementById('decrice').addEventListener('click', function(){
+          const num = document.getElementById('number').innerText;
+          const conNum = parseFloat(num);
+          const sum = conNum - 1;
+          document.getElementById('number').innerText =  sum; 
+        })
+    </script>
+    <script src="./scripts/utilities.js" >
+        
+    </script>
+</body>
+</html>
