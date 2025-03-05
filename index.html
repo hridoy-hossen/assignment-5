@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-100" id="root-ele">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <!-- favIcon -->
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+    <!-- daisy ui and tailwind css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- external style sheets -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/jsStyles.css">
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class=" max-w-screen-xl mx-auto ">
+    <header>
+        <div class="navbar bg-base-100 shadow-sm flex justify-between py-5 rounded-xl px-5 mt-5">
+            <div class="flex items-center gap-2">
+              <div class="inline-flex"><img class="w-8" src="assets/logo.png" alt=""></div>
+              <p><a class="text-xl">Dev<span class="font-bold">Board</span></a></p>
+            </div>
+            <div class="flex gap-4">
+             <div class="flex items-center gap-2 bg-gray-100 px-3   rounded-3xl" >
+                <i class="fa-solid fa-square-check text-blue-600 text-xl py-1"></i>
+                <p class="text-xl font-bold py-1" id="decrice-number">24</p>
+             </div>
+             <div>
+                <img src="assets/theme-btn.png" id="theme-btnn" class=" rounded-full p-2 bg-gray-100 btn" alt="">
+             </div>
+            </div>
+          </div>
+    </header>
+    <main class="grid grid-cols-4 gap-5 mt-5 rounded-xl">
+        <section class="col-span-3 bg-white p-5 rounded-xl ">
+            <!-- Discover something section -->
+            <section class="grid grid-cols-4 gap-5 border-b-[0.5px] pb-3 border-b-blue-400 border-dashed">
+           
+                <div class="bg-gray-100 flex gap-3 items-center rounded-xl px-3 py-3">
+                    <div>
+                        <i class="fa-solid fa-square-check text-blue-700 text-3xl p-4 bg-white rounded-full"></i>
+                    </div>
+                    <div>
+                        <p class="text-gray-600 text-lg">Task Assigned</p>
+                        <h1 id="inc-number" class="font-bold text-4xl">05</h1>
+                    </div>
+                </div>
+     
+                <div id="discover" class="col-span-2 bg-gradient-to-r from-[#3D57FD] via-[#6C7FFA] to-[#9BA8F8] flex p-3 gap-4 rounded-xl">
+                    <div>
+                        <img src="assets/board.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-white font-bold text-2xl">Discover Something <br> New Today!</p>
+                    </div>
+                </div>
+               
+                <div class="bg-gray-100 flex gap-3 items-center rounded-xl px-3 py-3">
+                    <div class="rounded-full bg-white p-4">
+                        <img src="assets/calender.png" class=" " alt="">
+                    </div>
+                    <div>
+                        <p id="day" class="text-gray-600 text-lg">Wed</p>
+                            <h1 id="date" class="font-bold text-lg">Jul 28 2025</h1>
+                    </div>
+                </div>
+            </section>
+            <!-- button and card section -->
+             <section class="grid grid-cols-3 gap-5">
+                <!-- box 1 -->
+                <div class="bg-gray-100 mt-5 p-4 rounded-xl">
+                    <p class=" rounded-xl bg-white text-lg p-2 inline-block rounded-lgl">ShopEase</p>
+                    <h1 class="text-xl font-semibold my-4 uppercase heading">Fix Mobile button Issue</h1>
+                    <div >
+                        <p class="p-4 text-gray-400 bg-white rounded-xl">Debug using DevTools, check for overlapping Debug DevTools elements...
+                        </p>
+                        <!-- <textarea name="" value="Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly" id="" cols="30" rows="4"></textarea> -->
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-sm text-gray-500">Deadline</p>
+                                <h3 class="font-semibold">21 March 2025</h3>
+                            </div>
+                            <div>
+                                <button class="btn-complite btn bg-blue-600 rounded-xl text-white">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- box 2 -->
+                <div class="bg-gray-100 mt-5 p-4 rounded-xl">
+                    <p class=" rounded-xl bg-white text-lg p-2 inline-block rounded-lgl">CloudSync</p>
+                    <h1 class="text-xl font-semibold my-4 uppercase heading">Add Dark Mode</h1>
+                    <div >
+                        <p class="p-4 text-gray-400 bg-white rounded-xl">Store the user's preference in localStorage, update CSS variables.."
+                        </p>
+                        <!-- <textarea name="" value="Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly" id="" cols="30" rows="4"></textarea> -->
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-sm text-gray-500">Deadline</p>
+                                <h3 class="font-semibold">21 March 2025</h3>
+                            </div>
+                            <div>
+                                <button class="btn-complite btn bg-blue-600 rounded-xl text-white">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- box 3 -->
+                <div class="bg-gray-100 mt-5 p-4 rounded-xl">
+                    <p class=" rounded-xl bg-white text-lg p-2 inline-block rounded-lgl">SwiftPay</p>
+                    <h1 class="text-xl font-semibold my-4 uppercase heading">Optimize Home page</h1>
+                    <div >
+                        <p class="p-4 text-gray-400 bg-white rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure 
+                        </p>
+                        <!-- <textarea name="" value="Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly" id="" cols="30" rows="4"></textarea> -->
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-sm text-gray-500">Deadline</p>
+                                <h3 class="font-semibold">21 March 2025</h3>
+                            </div>
+                            <div>
+                                <button class="btn-complite btn bg-blue-600 rounded-xl text-white">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- box 4 -->
+                <div class="bg-gray-100 mt-5 p-4 rounded-xl">
+                    <p class=" rounded-xl bg-white text-lg py-2 px-3 inline-block rounded-lgl">Meta</p>
+                    <h1 class="text-xl font-semibold my-4 uppercase heading">Add new emoji 🤲</h1>
+                    <div >
+                        <p class="p-4 text-gray-400 bg-white rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure 
+                        </p>
+                        <!-- <textarea name="" value="Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly" id="" cols="30" rows="4"></textarea> -->
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-sm text-gray-500">Deadline</p>
+                                <h3 class="font-semibold">21 March 2025</h3>
+                            </div>
+                            <div>
+                                <button class="btn-complite btn bg-blue-600 rounded-xl text-white">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- box 5 -->
+                <div class="bg-gray-100 mt-5 p-4 rounded-xl">
+                    <p class=" rounded-xl bg-white text-lg p-2 inline-block rounded-lgl">Google LLC</p>
+                    <h1 class="text-xl font-semibold my-4 uppercase heading">Integrate OpenAI API</h1>
+                    <div >
+                        <p class="p-4 text-gray-400 bg-white rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure 
+                        </p>
+                        <!-- <textarea name="" value="Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly" id="" cols="30" rows="4"></textarea> -->
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-sm text-gray-500">Deadline</p>
+                                <h3 class="font-semibold">21 March 2025</h3>
+                            </div>
+                            <div>
+                                <button class="btn-complite btn bg-blue-600 rounded-xl text-white">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- box 6 -->
+                <div class="bg-gray-100 mt-5 p-4 rounded-xl">
+                    <p class=" rounded-xl bg-white text-lg p-2 inline-block rounded-lgl">Glassdoar</p>
+                    <h1 class="text-xl font-semibold my-4 uppercase heading">Improbe Job searching</h1>
+                    <div >
+                        <p class="p-4 text-gray-400 bg-white rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure 
+                        </p>
+                        <!-- <textarea name="" value="Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly" id="" cols="30" rows="4"></textarea> -->
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-sm text-gray-500">Deadline</p>
+                                <h3 class="font-semibold">21 March 2025</h3>
+                            </div>
+                            <div>
+                                <button class="btn-complite btn bg-blue-600 rounded-xl text-white">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </section>
+        </section>
+        <section class="bg-white rounded-xl">
+            <div class="py-6 border-b-[0.5px] border-dashed border-blue-600">
+                <p class="text-xl text-center"><i class="fa-solid fa-clock-rotate-left text-xl pe-2"></i>Activity Log</p>
+                <button id="clear-btn" class="btn rounded-xl relative left-21 top-2 bg-blue-600 text-white text-lg">Clear History </button>
+            </div>
+            <div id="History">
+               
+            </div>
+        </section>
+    </main>
+    <script src="./scripts/blog.js"></script>
+    <script src="./scripts/utilities.js"></script>
+    <script src="./scripts/toggle.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+     <!-- favIcon -->
+     <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+     <!-- daisy ui and tailwind css cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!-- external style sheets -->
+     <link rel="stylesheet" href="./styles/style.css">
+     <link rel="stylesheet" href="./styles/jsStyles.css">
+     <!-- font awsome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="max-w-screen-xl mx-auto">
+    <header>
+        <div class="navbar bg-base-100 shadow-sm flex justify-between py-5 rounded-xl px-5 mt-5">
+            <div class="flex items-center gap-2">
+              <div class="inline-flex"><img class="w-8" src="assets/logo.png" alt=""></div>
+              <p><a class="text-xl">Dev<span class="font-bold">Board</span></a></p>
+            </div>
+            <div class="flex gap-4">
+             <div class="" >
+                <button id="back-to-desk" class="btn bg-blue-600 rounded-xl text-white">Back to dask</button>
+             </div>
+            </div>
+          </div>
+    </header>
+    <main class="mt-5">
+        <h1 class="font-bold text-4xl text-center uppercase">Blogs</h1>
+        <div class="p-6 rounded-xl shadow-sm bg-white mt-5">
+            <p class="text-2xl font-semibold mb-2">Question-1: What are the different ways to select an element in the DOM?</p>
+            <article class="text-lg">There are so many ways to select an element into the DOM. But most friquently used methords ar getElementById(), getElementByClassName(), getElementByTagName(), quearySelectorAll(), and quearySelector().</article>
+        </div>
+        <div class="p-6 rounded-xl shadow-sm bg-white mt-5">
+            <p class="text-2xl font-semibold mb-2">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+            <article class="text-lg">innerHTML is used for set HTML code in new created Tag or set an HTML code in existing Tag. innerText is used for display visible text in the html tag or set a new text value inside the tag. on the other hend innerContent works somewhat like innerText, but there are some differences. innerText returns only visible text of html element on the other hend textContent returns not only visible value but also hidden value. and it's also use for set a new text into the HTML tag..</article>
+        </div>
+        <div class="p-6 rounded-xl shadow-sm bg-white mt-5">
+            <p class="text-2xl font-semibold mb-2">Question-3: What is event delegation in the DOM?</p>
+            <article class="text-lg">Event Delegation means set addEventLitener() in parent element/node and control all child by Parent.</article>
+        </div>
+        <div class="p-6 rounded-xl shadow-sm bg-white mt-5">
+            <p class="text-2xl font-semibold mb-2">Question-4: What is event bubbling in the DOM?</p>
+            <article class="text-lg">Bubbling is a propagation system that moves from the HTML root parent to the selected element, passing through each step one by one.</article>
+        </div>
+        <div class="p-6 rounded-xl shadow-sm bg-white mt-5">
+            <p class="text-2xl font-semibold mb-2">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            <article class="text-lg">I can use document.getElementById() to select a parent element for insart new created html element. document.createElement() for create new element. then I use parent.appendChild() for append the element into the parent tag. on the other hend I use .removeChild() to remove an element.</article>
+        </div>
+    </main>
+    <script src="./scripts/blog.js"></script>
+    <script src="./scripts/utilities.js"></script>
+    <script src="./scripts/toggle.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script>
+        // blog page to main pagee..
+        document.getElementById('back-to-desk').addEventListener('click', function(){
+            window.location.href='index.html'
+        })
+    </script>
+</body>
+</html>
