@@ -1,24 +1,33 @@
 // let's control all complite buttons 
 const btns = document.getElementsByClassName('btn-complite');
 for(let item of btns){
-    item.addEventListener('click' , function(){
+    item.addEventListener('click' , function(e){
        const dec = decNum('decrice-number');
        const inc = incNum('inc-number');
        alert('Board updated successfully');
+       lastAlert('decrice-number');
        item.setAttribute('disabled', true);
-       const date = new Date();
-       const time = date.toLocaleTimeString()
-       const history = document.getElementById('History');
-       const p = document.createElement('p');
-       p.classList.add('p-2','pt-0','bg-gray-100' ,'m-2','text-center' ,'rounded-xl');
-       p.innerText =`You haved complete the task Add Dark Mode at ${time}` ;
-       history.appendChild(p);
+      
+       
+    })
+}
+// this code select heading tag of all boxes...
+const titleBtns = document.querySelectorAll('.btn-complite'); //select all btns using there classes..
+for(let title of titleBtns){ // declear for loop to select every element one by one. 
+    title.addEventListener("click", function(event){  // set addEventListener 
+        const parent = event.target.parentNode.parentNode.parentNode.parentNode; // propagate nodes and select main parent node of box
+        const headingg = parent.querySelector('h1').innerText; // select h1 heading 
+        const date = new Date();
+        const time = date.toLocaleTimeString()
+        const history = document.getElementById('History');
+        const p = document.createElement('p');
+        p.classList.add('p-2','pt-0','bg-gray-100' ,'m-2','text-center' ,'rounded-xl');
+        p.innerText =`You haved complete the ${headingg} at ${time} ` ;
+        history.appendChild(p);
     })
 }
 
-document.getElementById('theme-btnn').addEventListener('click', function(){
 
-})
 
 // set today's date in calender section 
 document.getElementById('date').innerText = setDateUpdate();

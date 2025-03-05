@@ -19,6 +19,12 @@ function incNum(id){
     document.getElementById(id).innerText = inc;   
 }
 
+function lastAlert(id){
+    const countValue = document.getElementById(id).innerText;
+    if(countValue == 0){
+        alert('Congratulations you have finished all the tasks')
+    }
+}
 // this function set todays date dynamically.
 function setDateUpdate(){
     const today = new Date();
