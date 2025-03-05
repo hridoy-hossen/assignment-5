@@ -8,11 +8,11 @@ for(let item of btns){
        item.setAttribute('disabled', true);
        const date = new Date();
        const time = date.toLocaleTimeString()
-       const p = document.createElement('p');
-       p.innerText =`You haved complete the task Add Dark Mode at ${time}` ;
        const history = document.getElementById('History');
-       history.appendChild(p);
+       const p = document.createElement('p');
        p.classList.add('p-2','pt-0','bg-gray-100' ,'m-2','text-center' ,'rounded-xl');
+       p.innerText =`You haved complete the task Add Dark Mode at ${time}` ;
+       history.appendChild(p);
     })
 }
 

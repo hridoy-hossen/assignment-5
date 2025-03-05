@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .dark-bg{
     background-color: rgb(24, 20, 20);
 }
@@ -15,4 +16,8 @@
 
 .purpul-bg{
     background-color: purple;
+=======
+.init-bg{
+    background-color: #F4F7FF;
+>>>>>>> c4134e7e63b37306aa0e72da9d36b99901edd6ef
 }

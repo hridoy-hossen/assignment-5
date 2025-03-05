@@ -32,4 +32,3 @@ function getDay(){
     const dayes = dd.toLocaleDateString('en-us',{weekday: 'short'});
     return dayes;
 }
-
